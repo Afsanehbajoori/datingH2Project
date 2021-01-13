@@ -1,0 +1,45 @@
+﻿<Page x:Class="datingH2Project.home"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+       xmlns:fa="http://schemas.fontawesome.io/icons/"
+      xmlns:local="clr-namespace:datingH2Project"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="home" Background="Aqua">
+
+    <Grid HorizontalAlignment="Center" Margin="60,50,54,44.6" Width="686">
+        <!--<TextBlock Text="FirstName:" FontStyle="Oblique" Margin="177,56,543,514" FontSize="15"/>
+        <TextBox x:Name="firstnameText" Width="120" Height="20" Margin="312,55,368,515" RenderTransformOrigin="0.55,4.827" />
+        <TextBlock Text="LastName:" FontStyle="Oblique" Margin="177,91,543,479" FontSize="15"/>
+        <TextBox x:Name="lastnameText" Width="120" Height="20" Margin="312,90,368,480" RenderTransformOrigin="0.55,4.827" />
+        <TextBlock Text="Date Of Birth:" FontStyle="Oblique" Margin="177,131,527,442" FontSize="15" RenderTransformOrigin="0.45,0.23"/>
+        <TextBox x:Name="dateofbirthText" Width="120" Height="20" Margin="312,129,368,441" RenderTransformOrigin="1.64,0.33" />
+        <TextBlock Text="Height:" FontStyle="Oblique" Margin="177,173,543,399" FontSize="15" RenderTransformOrigin="0.459,0.991"/>
+        <TextBox x:Name="heightText" Width="120" Height="20" Margin="312,176,368,404" RenderTransformOrigin="0.522,1.447" />
+        <TextBlock Text="Weight:" FontStyle="Oblique" Margin="177,211,543,355" FontSize="15" RenderTransformOrigin="0.459,0.991"/>
+        <TextBox x:Name="weightText" Width="120" Height="20" Margin="365,226,201,109" />
+        <TextBlock Text="Gender:" FontStyle="Oblique" Margin="177,299,394,31" FontSize="15" RenderTransformOrigin="0.459,0.991"/>
+        <TextBox x:Name="genderText" Width="120" Height="20" Margin="365,295,201,40" RenderTransformOrigin="1.64,0.33" TextChanged="genderText_TextChanged" />-->
+        
+        
+        
+       
+
+
+
+         <Button x:Name="Back" Click="Back_Click" Background="Aqua" BorderThickness="0" HorizontalAlignment="Left" VerticalAlignment="Bottom" >
+            <StackPanel Orientation="Horizontal">
+                <fa:ImageAwesome Icon="Backward" Foreground="CornflowerBlue"    Height="30" Width="30" />
+
+
+            </StackPanel>
+        </Button>
+
+
+
+
+
+    </Grid>
+</Page>

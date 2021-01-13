@@ -1,0 +1,79 @@
+﻿<Window x:Class="datingH2Project.acount"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:datingH2Project"
+        mc:Ignorable="d"
+        Title="Create your account"  Height="400" Width="450" Background="AntiqueWhite"   WindowStyle="None"  FontFamily="Segoe UI Emoji"  ResizeMode="NoResize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+
+
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="20" />
+
+
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Column="1" Grid.ColumnSpan="7" Text="Create your account" FontSize="18" TextAlignment="Center" Margin="61.2,11,24.6,9.6" FontWeight="Bold" FontStyle="Italic" Grid.RowSpan="2"/>
+
+        <TextBlock Grid.Column="1" Grid.Row="2" Text="Username" Margin="4.2,6.6,10,40"/>
+        <TextBox x:Name="usernameText" Grid.Column=" 2"  Grid.Row="2" Width="150" Height="25" Margin="8,6.6,13.2,49.2" Background="#eee"/>
+
+        <TextBlock Grid.Column="1" Grid.Row="2" Text="First Name" Margin="4.2,39.6,10,15.2"/>
+        <TextBox x:Name="firstnameText" Grid.Column=" 2"  Grid.Row=" 2" Width="150" Height="25" Margin="8,42.4,12.4,10.2" Background="#eee"/>
+
+        <TextBlock Grid.Column="1" Grid.Row="3" Text="Last Name" Margin="5 0 10 10"/>
+        <TextBox x:Name="lastnameText" Grid.Column=" 2" Grid.Row=" 3" Width="150" Height="25" Margin="5 0 10 10" Background="#eee" />
+
+        <TextBlock Grid.Column="1" Grid.Row="4" Text="Date of birth" Margin="5 0 10 10"/>
+        <!--<TextBox x:Name="dateofbirthText" Grid.Column="2" Grid.Row="4" Width="150" Height="25" Margin="5 0 10 10" Background="#eee" />-->
+        <DatePicker Name="dateofbirth" IsTodayHighlighted="True" SelectedDateFormat="Short" DisplayDateStart="1960-01-01" DisplayDateEnd="2021-12-01"  Grid.Column="2" Grid.Row="4"  Width="150" Height="25" Margin="5 0 10 10" Background="#eee" FirstDayOfWeek="Monday" DisplayDate="2020-11-19"  FontWeight="Bold" />
+
+        <TextBlock Grid.Column="1" Grid.Row="5" Text="height" Margin="5 0 10 10"/>
+        <TextBox x:Name="heightText" Grid.Column=" 2" Grid.Row=" 5" Width="150" Height="25" Margin="5 0 10 10" Background="#eee" />
+
+        <TextBlock Grid.Column="1" Grid.Row="6" Text="Weight" Margin="5 0 10 10"/>
+        <TextBox x:Name="weightText" Grid.Column=" 2" Grid.Row=" 6" Width="150" Height="25" Margin="5 0 10 10" Background="#eee" />
+
+        <TextBlock Grid.Column="1" Grid.Row="8" Text="Gender" Margin="0.2,0.2,15,-5.6" Grid.RowSpan="2"/>
+        <!--<TextBox x:Name="genderText" Grid.Column=" 2" Grid.Row=" 7" Width="150" Height="25" Margin="5 0 10 10" Background="#eee" />-->
+        <RadioButton GroupName="gender" Name="male" Checked="male_Checked" Background="#eee"  Grid.Column=" 2" Grid.Row="9" Margin="0,0.4,109.4,-5.6" RenderTransformOrigin="0.418,2.3">Male</RadioButton>
+        <RadioButton GroupName="gender" Name="female" Checked="female_Checked"  Background="#eee" Grid.Column=" 2" Grid.Row="9" Margin="89,0,0.4,-6.2" RenderTransformOrigin="0.478,-0.015">Female</RadioButton>
+
+
+        <!--<Image  Name="imgPhoto" Stretch="Fill" Grid.Column="5" Grid.Row="2" Grid.ColumnSpan="3" Grid.RowSpan="3" Margin="30 20 10 0"  Width="120" Height="120" />
+        <Button  x:Name="uploadButton" Content="Upload" Style="{StaticResource RoundButtonTemplate}" Height="23" Width="75" Grid.Column="5" Grid.Row=" 6" Click="uploadButton_Click" Margin="30 0 0 0"/>
+
+        <Button  x:Name="saveButton" Content="Save" Style="{StaticResource RoundButtonTemplate}" Height="23"  Width="75" Grid.Column="6" Grid.Row=" 6" Click="saveButton_Click" Margin="40 0 0 0" />-->
+
+        <Button  x:Name="continueButton" Content="Continue" Style="{StaticResource RoundButtonTemplate}"  Width="102" Grid.Column="7" Grid.Row="9" Click="continueButton_Click"  Margin="34.4,80,-112.4,-83.6" HorizontalAlignment="Left"  />
+        <Button  x:Name="Exit" Content="Exit" Style="{StaticResource RoundButtonTemplate}" Grid.Column="2" Grid.Row="9" Click="Exit_Click"  Margin="57,80,21.4,-81.6" RenderTransformOrigin="0.483,2.148"  />
+        <Button  x:Name="DeleteAccount" Content="DeleteAccount" Style="{StaticResource RoundButtonTemplate}" Grid.Column="1" Grid.Row="9" Click="DeleteAccount_Click"  Margin="0.2,80,152.4,-83.6" RenderTransformOrigin="-1.565,0.4" Grid.ColumnSpan="2"  />
+
+
+
+
+    </Grid>
+</Window>
